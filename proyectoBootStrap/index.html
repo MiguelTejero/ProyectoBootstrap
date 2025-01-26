@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta un Amigo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">Adopta un Amigo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#bannerCarousel">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#information-container">Conócenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cards">Adopciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner as Carousel -->
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMG/perro1.png" class="d-block w-100" alt="Perro 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Encuentra a tu mejor amigo</h5>
+                    <p>Conoce a los perros que esperan un hogar lleno de amor.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/perro2.png" class="d-block w-100" alt="Perro 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Haz la diferencia</h5>
+                    <p>Adoptar salva vidas y llena tu hogar de alegría.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/perro5.jpg" class="d-block w-100" alt="Perro 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Únete a nuestra misión</h5>
+                    <p>Ayúdanos a encontrar familias para estos peluditos.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/perro7.png" class="d-block w-100" alt="Perro 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Encuentra a tu mejor amigo</h5>
+                    <p>Conoce a los perros que esperan un hogar lleno de amor.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/perro9.jpg" class="d-block w-100" alt="Perro 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Haz la diferencia</h5>
+                    <p>Adoptar salva vidas y llena tu hogar de alegría.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/perro8.png" class="d-block w-100" alt="Perro 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Únete a nuestra misión</h5>
+                    <p>Ayúdanos a encontrar familias para estos peluditos.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Informacion -->
+    
+
+    <div id="information-container" class="information-container">
+        <div class="information-card-information" style="width: 18rem;">
+            <div class="information-card-body">
+              <h5 class="information-card-title">Conocenos!</h5>
+              <h6 class="information-card-subtitle mb-2 text-muted"></h6>
+              <p class="information-card-text">En nuestro refugio, trabajamos para brindar una segunda oportunidad a perros abandonados o en situación de calle. Aquí, cada peludito recibe atención médica, cariño y rehabilitación mientras esperan encontrar un hogar lleno de amor.</p>
+              <a href="index.html#container mt-5" class="information-card-link">Adoptar</a>
+            </div>
+
+            <div class="container text-center mt-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ¿Por qué adoptar?
+                </button>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">¿Por qué Adoptar?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Adoptar un perro no solo cambia su vida, también transforma la tuya. Únete a nuestra causa y dale una segunda oportunidad a un peludito.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- Modal -->
+        
+
+        <div class="fachada-card" style="width: 18rem;">
+            <img src="./IMG/fachada.png" class="fachada-card-img-top" alt="...">
+            <div class="fachada-card-body">
+              <p class="fachada-card-text">Nuestro refugio de amigos caninos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Perros-->
+    
+    <div id="cards" class="cards">
+        <div id="adoptanos">ADOPTÁNOS!!!</div>
+        <div class="cards-wrap">
+            <div class="card" style="width: 18rem;">
+                <img src="IMG/perro1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Luna</h5>
+                    <p class="card-text">Luna es una perrita muy juguetona y llena de energía. Tiene 2 años y le encanta correr al aire libre.</p>
+                    <a href="index.html#container mt-5" class="btn btn-primary">Adóptame</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="IMG/perro2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Simón</h5>
+                    <p class="card-text">Simón es tranquilo y muy cariñoso. Tiene 4 años y le encanta dormir a tu lado.</p>
+                    <a href="index.html#container mt-5" class="btn btn-primary">Adóptame</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="IMG/perro5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chispa</h5>
+                    <p class="card-text">Chispa es muy activa y curiosa. Tiene 1 año y siempre está buscando aventuras.</p>
+                    <a href="index.html#container mt-5" class="btn btn-primary">Adóptame</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="IMG/perro8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Max</h5>
+                    <p class="card-text">Max es amigable y juguetón. Tiene 3 años y es perfecto para familias con niños.</p>
+                    <a href="index.html#container mt-5" class="btn btn-primary">Adóptame</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="IMG/perro9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nina</h5>
+                    <p class="card-text">Nina es dulce y leal. Tiene 5 años y busca un hogar tranquilo donde pueda recibir amor.</p>
+                    <a href="index.html#container mt-5" class="btn btn-primary">Adóptame</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="IMG/perro7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Roco</h5>
+                    <p class="card-text">Roco es juguetón y siempre está feliz. Tiene 2 años y adora jugar con pelotas.</p>
+                    <a href="index.html#container mt-5" class="btn btn-primary">Adóptame</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    
+    <!-- Formulario -->
+    <div id="container mt-5" class="container mt-5">
+        <h2>Formulario de Adopción</h2>
+        <p>Llena este formulario para comenzar el proceso de adopción.</p>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Perro que quieres adoptar</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Indica el nombre del perro que te gustaría adoptar">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">¿Por qué quieres adoptar?</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntanos un poco sobre ti y tu hogar."></textarea>
+            </div>
+            <div>
+                <button class="btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

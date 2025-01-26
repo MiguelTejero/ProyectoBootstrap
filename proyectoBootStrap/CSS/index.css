@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+ 
+        /* === Importación de Fuentes y Estilos Bootstrap Modificados === */
+/* En este caso, los estilos de Bootstrap no necesitan importarse aquí, 
+   pero se supone que se cargan desde el HTML con un enlace <link>. */
+
+/* === Estilos Propios === */
+
+/* === Declaración de Variables === */
+/* Definimos colores y otras variables que se usan a lo largo del diseño */
+:root {
+    --primary-color: #8B4513; /* Marrón principal */
+    --secondary-color: #6B2F1A; /* Marrón oscuro */
+    --background-color: #ffffff; /* Fondo blanco */
+    --text-color: #555555; /* Gris oscuro */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+    --border-radius: 8px; /* Radio de los bordes */
+    --font-family: 'Poppins', sans-serif; /* Fuente principal */
+
+}
+
+/* === Inicialización de Componentes === */
+body {
+    background-color: var(--background-color); /* Fondo general */
+    padding-top: 56px; /* Espacio para la navbar fija */
+    font-family: var(--font-family); /* Aplica la fuente globalmente */
+
+}
+
+/* === Estilos de Mayor a Menor Componente === */
+
+/* === Barra de Navegación === */
+/* Basada en Bootstrap: Se ha modificado el color, el comportamiento fijo y el hover */
+.navbar {
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: var(--background-color); /* Fondo blanco */
+    box-shadow: 0 4px 6px var(--shadow-color); /* Sombra suave */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    font-family: var(--font-family); /* Fuente de la barra */
+
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+}
+
+.navbar-brand {
+    color: var(--primary-color); /* Color del texto de la marca */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: var(--secondary-color); /* Color más oscuro en hover */
+}
+
+.navbar-nav .nav-link {
+    color: var(--primary-color); /* Color de los enlaces */
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+    font-family: var(--font-family); /* Fuente de los enlaces */
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color); /* Color más oscuro en hover */
+}
+
+.navbar-toggler {
+    border-color: var(--primary-color); /* Color del borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--primary-color)); /* Icono del botón */
+}
+
+.collapse {
+    background-color: var(--background-color); /* Fondo blanco al colapsar */
+}
+
+/* === Carrusel === */
+/* Basado en Bootstrap: Ajuste del tamaño y diseño */
+.carousel-inner img {
+    height: 700px; /* Altura fija para las imágenes del carrusel */
+    object-fit: cover; /* Ajusta la imagen para llenar el espacio */
+}
+
+.carousel-caption {
+    background-color: var(--primary-color); /* Fondo marrón */
+    opacity: 90%; /* Transparencia ligera */
+    color: var(--background-color); /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+    font-family: var(--font-family); /* Fuente del texto */
+
+}
+
+.carousel-caption h5 {
+    font-size: 200%;
+}
+
+.carousel-caption p {
+    font-size: 130%;
+}
+
+/* === Sección "Adoptanos" === */
+#adoptanos {
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+/* === Tarjetas (Cards) === */
+.cards-wrap {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se ajusten a nuevas líneas */
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 100px; /* Espaciado entre las cards */
+    padding: 20px; /* Espaciado alrededor de la sección */
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 40px); /* Tres columnas con espacio entre ellas */
+    max-width: 300px; /* Ancho máximo de las cards */
+    margin: 10px; /* Espaciado adicional para cada card */
+    box-shadow: 0 4px 6px var(--shadow-color); /* Sombra suave */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+}
+
+.card img {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+}
+
+.card-body {
+    text-align: center; /* Centra el contenido dentro de las cards */
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Marrón */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--text-color); /* Gris oscuro */
+    font-family: var(--font-family); /* Fuente del texto */
+
+}
+
+.btn {
+    background-color: var(--primary-color); /* Marrón */
+    border: none;
+    color: var(--background-color); /* Blanco */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-family); /* Fuente de los botones */
+}
+
+.btn:hover {
+    background-color: var(--secondary-color); /* Marrón más oscuro */
+}
+
+/* === Sección de Información === */
+.information-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.information-card-information {
+    margin: 5%;
+    background-color: var(--background-color);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    overflow: hidden;
+    text-align: center;
+}
+
+.information-card-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.fachada-card-img-top{
+    margin-top: 90px;
+    height: 18rem;
+    border-radius:5%;
+}
+
+/* === Diseño Responsivo === */
+@media (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Una columna en pantallas pequeñas */
+    }
+
+    .information-container {
+        flex-direction: column; /* Cambia de filas a columnas */
+        align-items: center;
+    }
+}
